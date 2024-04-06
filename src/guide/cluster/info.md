@@ -78,8 +78,8 @@ GET /api/cluster/status
 | » code        | integer | true | none | 状态码           | none |
 | » msg     | string  | true | none | 信息                 | none |
 | » data        | object  | true | none | 数据             | none |
-| »» isenabled        | bool | true | none | id         | none |
-| »» issync   | bool  | true | none | 用户名             | none |
+| »» isenabled        | boolean | true | none | id         | none |
+| »» issync   | boolean  | true | none | 用户名             | none |
 
 
 ## Get 节点信息获取
@@ -123,6 +123,6 @@ GET /api/cluster/info
 | » data        | object  | true | none | 数据             | none |
 | »» name        |str | true | none | 节点名         | none |
 | »» _id   | str  | true | none | 节点id            | none |
-| »» fullsize   | bool  | true | none | 是否全量             | none |
+| »» fullsize   | boolean  | true | none | 是否全量             | none |
 | »» trust   | str  | true | none | 信任度             | none |
-| »» noFastEnable   | bool  | true | none | 是否开启NoFastEnable             | none |
+| »» noFastEnable   | boolean  | true | none | 是否开启NoFastEnable             | none |
