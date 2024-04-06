@@ -13,7 +13,7 @@ export default navbar([
         children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
       },
       {
-        text: "登录相关",
+        text: "账号相关",
         icon: "lightbulb",
         prefix: "auth/",
         children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
