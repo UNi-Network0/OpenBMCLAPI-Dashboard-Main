@@ -3,7 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://doc.bmclapi.oneline",
 
   author: {
     name: "Mr.Hope",
@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "/UNi-Network0/OpenBMCLAPI-Dashboard-APIDOC",
 
   docsDir: "src",
 
