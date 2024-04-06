@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: "https://doc.bmclapi.oneline",
 
   author: {
-    name: "Mr.Hope",
+    name: "unifyz",
     url: "https://mister-hope.com",
   },
 
