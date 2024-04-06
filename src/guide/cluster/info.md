@@ -4,11 +4,11 @@ icon: circle-info
 ---
 
 
-## Get 节点信息获取
+## Get 节点类型获取
 
-GET /api/cluster/info
+GET /api/cluster/type
 
-获取当前启用节点信息
+获取当前启用节点客户端类型
 
 > 返回示例
 
