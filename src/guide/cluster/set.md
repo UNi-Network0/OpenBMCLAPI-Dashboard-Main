@@ -47,3 +47,46 @@ GET /api/cluster/set/storage/add
 | » code    | integer | true | none |        | 状态码 |
 | » message | string  | true | none |        | 信息   |
 | » data    | string  | true | none |        | data   |
+
+
+## Get 删除节点储存
+
+GET /api/cluster/set/storage/del
+
+添加节点储存
+
+### 请求参数
+
+| 名称       | 位置 | 类型   | 必选 | 中文名     | 说明       |
+| ---------- | ---- | ------ | ---- | ---------- | ---------- |
+| type | body | string | 是   | 储存类型 | 可选WebdavStorage/localstorage |
+
+
+> 返回示例
+
+> 成功
+
+```json
+{
+  "code": 200,
+  "msg": "deleted",
+  "data": "Wedbav-Storage" 
+
+}
+```
+
+### 返回结果
+
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
+
+### 返回数据结构
+
+状态码 **200**
+
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none |        | 状态码 |
+| » message | string  | true | none |        | 信息   |
+| » data    | string  | true | none |        | data   |
