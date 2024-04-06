@@ -11,9 +11,7 @@ jobs:
       with:
         node-version: 20.x'      
     - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master &&  actions/setup-node@master
-      with: 
-          node-versions: 20.x
+      uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: username/repo
