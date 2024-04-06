@@ -6,11 +6,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-
-    - uses: actions/setup-node@v4
+    - name: Use Node.js
+      uses: actions/setup-node@master
       with:
-        node-version: '20.x'
-
+        node-version: 20.1'      
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
@@ -18,5 +17,5 @@ jobs:
         TARGET_REPO: username/repo
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn docs:build
-        BUILD_DIR: docs/.vuepress/dist
-        CNAME: https://www.xxx.com
+        BUILD_DIR: src/.vuepress/dist
+        CNAME: https://doc.bmclapi.online
